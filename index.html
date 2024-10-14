@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lighton-off</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        .on{
+            margin-right: 5px;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .of{
+            margin-right: 5px;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .lg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="light off.jpg" alt="lighton-off" id="light">
+    <br> 
+    <br>
+  <div class="lg">
+    <button onclick="lighton()" class="on">LightOn</button>
+    <button onclick="lightof()" class="of">LightOff</button>
+  </div>
+</body>
+<script>
+function lighton(){
+    document.getElementById('light').src = "light-bulb-2-1427493.webp";
+} lighton();
+function lightof(){
+    document.getElementById('light').src = "light off.jpg";
+} lightof();
+</script>
+</html>
